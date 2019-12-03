@@ -25,7 +25,7 @@ class Main {
     }
     else{
       winner = true;
-      System.out.println("You guessed correctly after " + guessCount + " attempts!" + "The number was " + winningNum);
+      System.out.println("You guessed correctly after " + guessCount + " attempts!" + " The number was " + winningNum);
     }
     }
   }
