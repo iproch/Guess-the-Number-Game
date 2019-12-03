@@ -9,9 +9,21 @@ class Main {
     boolean winner = false;
 
     while(!winner){
-    System.out.println("Enter your guess.");
-    System.out.println(winningNum);
-    winner = true;
+    System.out.println("Enter your guess:");
+    int userGuess = userInput.nextInt();
+    
+    if(userGuess != winningNum){
+      if(userGuess < winningNum){
+        System.out.println("Try guessing higher!");
+      }
+      else{
+        System.out.println("Try guessing lower!");
+      }
+    }
+    else{
+      winner = true;
+      System.out.println("You guessed correctly! The number was " + winningNum);
+    }
     }
   }
 }
